@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Stagiaire({ nom, filiere, image }) {
+export default function Stagiaire({ nom,age, filiere, image }) {
     return (
         <div className='stagiaire'>
             <img src={image} alt={nom} />
