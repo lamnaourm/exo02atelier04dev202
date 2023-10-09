@@ -18,6 +18,13 @@ export default class Etablissement extends Component {
                 {this.state.liste_stags.map(s =>
                     <Stagiaire key={s.id} nom={s.nom} filiere={s.filiere} age={s.age} image={s.image}/>
                 )}
+
+                <div className='btns'>
+                    <button>Clear All</button>
+                    <button>All</button>
+                    <button>Filiere TDI</button>
+                    <button>Filiere TRI</button>
+                </div>
             </div>
         )
     }

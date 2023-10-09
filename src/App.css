@@ -1,8 +1,60 @@
-img {
-  width: 100px;
-  height: 100px;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(4, 4, 86);
+  height: 100vh;
 }
 
 .stagiaire {
   display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.etablissement {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.etablissement img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: rgba(159, 158, 158, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.stagiaire h1 {
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.etablissement h4 {
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+.btns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+.btns button {
+  background: rgb(4, 4, 86);
+  color: white;
+  padding: 10px;
+  border: none;
+  font-size: 15px;
+}
+
+.btns button:hover {
+  opacity: 0.7;
 }
