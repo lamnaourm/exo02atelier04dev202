@@ -20,10 +20,10 @@ export default class Etablissement extends Component {
                 )}
 
                 <div className='btns'>
-                    <button>Clear All</button>
-                    <button>All</button>
-                    <button>Filiere TDI</button>
-                    <button>Filiere TRI</button>
+                    <button onClick={() => this.setState({liste_stags:[]})}>Clear All</button>
+                    <button onClick={() => this.setState({liste_stags:this.props.stagiaires})}>All</button>
+                    <button onClick={() => this.setState({liste_stags:this.props.stagiaires.filter(s => s.filiere === 'TDI')})}>Filiere TDI</button>
+                    <button onClick={() => this.setState({liste_stags:this.props.stagiaires.filter(s => s.filiere === 'TRI')})}>Filiere TRI</button>
                 </div>
             </div>
         )
